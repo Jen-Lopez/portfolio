@@ -19,7 +19,7 @@ const navSlide = () => {
       link.addEventListener("click", function() {navSlide();})
     });
     menu.classList.toggle('toggle');
-    document.querySelector ("#wrap").classList.toggle("fixed");
+    document.querySelector ("body").classList.toggle("fixed");
 }
 
 const touchBurger = () => {

@@ -52,8 +52,8 @@ background: #9F9F9A; transition: width .3s;}
 .role {color:#819DB0; margin-top: 0; margin-left: 25px; font-size: 18px;}
 .expand {float: right; font-size: 25px; margin: 20px 20px 0 0; color: #A6BAC9; cursor: pointer;}
 .hidden-info {max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; color: #4F758F; font-weight: 100; text-align: justify;}
-.hidden-info p, .hidden-info ul { padding: 0 25px 20px;}
-
+.hidden-info p { padding: 0 25px 20px;}
+.hidden-info ul  {padding: 0 45px 20px;}
 #experience a {color: #6a9ab9; text-decoration: none;}
 #experience a:hover {text-decoration: underline;}
 
@@ -65,7 +65,7 @@ background: #9F9F9A; transition: width .3s;}
 #resume a {border: 2px solid #94afc1; padding: 10px; font-size: 20px; border-radius: 5px; font-weight: 300;}
 #resume a:hover {background-color: #94afc1; text-decoration: none; color: #dfecf5; transition: background-color 0.5s ease-in-out;}
 
-.project {display: flex; justify-content: center; width: 80%; margin: 0 auto 60px;}
+.project {display: flex; justify-content: center; width: 80%; margin: 0 auto 100px;}
 .image {background-color: #E9F1F6; width: 45%; height: 350px;}
 .proj-info {width: 55%;  position: relative;}
 .proj-info h1 {color: #AEBDC6; font-size: 2em; font-weight: bold;}
@@ -126,10 +126,9 @@ footer p {font-weight: 100; color: #536B7A;}
   }
   .nav-links li a {color: #ACCFE2;}
   .nav-links li a::after {background: #ACCFE2;}
-  .fixed {height: 100vh; overflow-y: hidden;}
+  .fixed {overflow-y: hidden;} 
   .image {width: 60%;}
   .proj-info h1 {font-size: 1.6em;}
-  .description {font-size: 14px; text-align: left;}
 }
 
 @media only screen and (max-width: 840px) {
@@ -140,10 +139,10 @@ footer p {font-weight: 100; color: #536B7A;}
   .heading {display: inline-block; margin-left: 0;}
 }
 @media only screen and  (min-width: 841px) and (max-width: 970px) {#circ-container {margin-right: 3%;}}
-@media only screen and (max-width: 750px) {.date{display: block;} .expand {margin-top: -100px;}}
+@media only screen and (max-width: 750px) {.date{display: block;} .expand {margin-top: -100px;} }
 @media only screen and  (min-width: 601px) and (max-width: 845px) { .asset {width: 160%;}}
 @media only screen and  (max-width: 850px)  { #courses ul {width: 80%;}   #courses li.dropdown {display: block;}
-.dropbtn {width: 100%;}
+.dropbtn {width: 100%;}  .description {font-size: 14px; text-align: left;}
 }
 @media only screen and  (min-width: 846px) and (max-width: 1000px) {.asset {width: 140%;}}
 @media only screen and  (min-width: 1001px) and (max-width: 1200px) {.asset {width: 120%;}}
@@ -161,7 +160,7 @@ footer p {font-weight: 100; color: #536B7A;}
   .dropbtn {font-size: 1em;}
   #courses .dropdown-content, footer p {font-size: 14px;}
   footer img {margin: 0 10px; width: 50px;}
-  .description ul li {font-size: 11px;}   
+  .description ul li {font-size: 11px;}  .description p {font-size: 13px;}
 }
 @media only screen and (max-height: 350px) {.asset {height: 185vh;} #main-img {min-height: 185vh;}}
 @media only screen and (min-height: 351px) and (max-height: 550px) {.asset {height: 150vh;} #main-img {min-height: 150vh;}}
