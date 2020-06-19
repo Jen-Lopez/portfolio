@@ -67,10 +67,19 @@ background: #9F9F9A; transition: width .3s;}
 #resume a:hover {background-color: #94afc1; text-decoration: none; color: #dfecf5; transition: background-color 0.5s ease-in-out;}
 
 .project {display: flex; justify-content: center; width: 80%; margin: 0 auto 100px;}
+.project:first-of-type {margin-bottom: 200px;}
 .image {background-color: #E9F1F6; width: 45%; height: 350px;}
+.desktop .image {background-color: transparent;}
+.desktop .image img {width: 100%; box-shadow: 8px 6px 5px #d5dfe4}
+.iphone {width: 150px; border-radius: 10px;}
+
+.images {text-align: center;} .glide__slide {filter: blur(6px); opacity: 0.7; transition: .3s linear;}
+.glide__slide--active {opacity: 1; filter: none; transform: scale(1.1);}
+.glide__arrow {top: 10% !important;}
+
 .proj-info {width: 55%;  position: relative;}
 .proj-info h1 {color: #AEBDC6; font-size: 2em; font-weight: bold;}
-.description {background-color: #C8D9E3; padding: 15px; color: white; position: absolute; right: 0; width: 105%;}
+.description {background-color: #ccdae2; padding: 15px; color: white; position: absolute; right: 0; width: 105%;}
 .description ul {position: absolute; width: 100%; list-style: none; display: flex; right: 0; justify-content: flex-end; color: #899BA6; padding-top: 20px;}
 .description ul li {font-size: 14px; padding: 0 10px;}
 
@@ -162,6 +171,7 @@ footer p {font-weight: 100; color: #536B7A;}
   #courses .dropdown-content, footer p {font-size: 14px;}
   footer img {margin: 0 10px; width: 50px;}
   .description ul li {font-size: 11px;}  .description p {font-size: 13px;}
+  .project.desktop {margin-bottom: 0px;}
 }
 @media only screen and (max-height: 350px) {.asset {height: 185vh;} #main-img {min-height: 185vh;}}
 @media only screen and (min-height: 351px) and (max-height: 550px) {.asset {height: 150vh;} #main-img {min-height: 150vh;}}

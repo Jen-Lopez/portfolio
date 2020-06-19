@@ -7,6 +7,8 @@
     <link type="text/css" rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="glide/glide.core.min.css">
+    <link rel="stylesheet" href="glide/glide.theme.min.css">
   </head>
   <body>
     <div id = "wrap">
@@ -149,8 +151,35 @@
           <h1 class="heading">Work<hr></h1>
           
           <div class="project">
+
             <div class="image">
-            </div>
+              <div class="images glide">
+                <div class="glide__track" data-glide-el = "track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                      <img class =  "iphone" src="projects/main.png" alt="">
+                    </li>
+                    <li class="glide__slide">
+                      <img class =  "iphone" src="projects/profile.png" alt="">
+                    </li>
+                    <li class="glide__slide">
+                      <img class =  "iphone" src="projects/social.png" alt="">
+                    </li>
+                    <li class="glide__slide">
+                      <img class =  "iphone" src="projects/outfit-gen.png" alt="">
+                    </li>
+                    <li class="glide__slide">
+                      <img class =  "iphone" src="projects/upload.png" alt="">
+                    </li>
+                  </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"> &lt;</button>
+                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">"> &gt;</button>
+                </div>
+                </div>
+              </div>
+
             <div class="proj-info">
               <h1 class="right-text">UTrend</h1>
               <div class = "description">
@@ -164,8 +193,8 @@
                </div>
             </div>
           </div>
-          <div class="project">
-            <div class="image"></div>
+          <div class="project desktop">
+            <div class="image"><img src="projects/open.png"></div>
             <div class="proj-info left">
               <h1 class="left-text">OpenFoodFacts</h1>
               <div class = "description">
@@ -178,8 +207,8 @@
             </div>
           </div>
           
-          <div class="project">
-            <div class="image"></div>
+          <div class="project desktop">
+            <div class="image"><img src="projects/tech.png"></div>
             <div class="proj-info">
               <h1 class="right-text">Tech@NYU</h1>
               <div class = "description">
@@ -192,8 +221,8 @@
             </div>
           </div>
 
-          <div class="project">
-            <div class="image"></div>
+          <div class="project desktop">
+            <div class="image"><img src="projects/studybuddy.png"></div>
             <div class="proj-info left">
               <h1 class="left-text">StudyBuddy</h1>
               <div class = "description">
@@ -274,5 +303,17 @@
 
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="glide/glide.min.js"></script>
+    <script>
+      new Glide (".images", {
+        type: 'carousel',
+        perView: 3,
+        focusAt: 'center',
+        gap: 50,
+        breakpoints: {
+          1200: {perView: 1}
+        }
+      }).mount();
+    </script>
   </body>
 </html>
