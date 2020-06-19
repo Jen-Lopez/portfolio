@@ -19,8 +19,9 @@ background: #9F9F9A; transition: width .3s;}
 .burger {display: none; cursor: pointer; z-index: 2;}
 .burger div {width:28px; height: 3px; background-color: #9F9F9A; margin: 5px; border-radius: 5px; transition: all 0.3s ease;}
 
-.asset {position: absolute; height: 95vh; width: 100%; margin-left: 0px}
-#main-img {min-height: 95vh;}
+.asset {position: absolute; height: 95vh; width: 100%; margin-left: 0px; z-index: -1;}
+.front {height: 125%;} .mid {height: 105%;}
+#main-img {min-height: 95vh; position: relative; overflow: hidden;}
 #wrap {overflow-x: hidden; position: relative; height: 100%;}
 
 #text {
